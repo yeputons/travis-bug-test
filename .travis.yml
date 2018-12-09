@@ -3,6 +3,13 @@ dist: trusty
 compiler:
   - gcc
 
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-7
+
 install:
   - sudo apt update
 
